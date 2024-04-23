@@ -1,0 +1,22 @@
+{
+    "name": "pablo/prybienesraices",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pablo Martin Torres Nara",
+            "email": "pablo564903@gmail.com"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.5",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload":{
+        "psr-4":{
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    }
+}
