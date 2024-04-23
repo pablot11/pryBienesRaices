@@ -1,5 +1,5 @@
 <main class="contenedor seccion">
-    <h1>Mas Sobre Nosotros</h1>
+    <h1>Más Sobre Nosotros</h1>
     <?php include 'iconos.php' ?>
 </main>
 <section class="seccion contenedor">
@@ -14,7 +14,7 @@
 <section class="imagen-contacto">
     <h2>Encuentra la casa de tus sueños</h2>
     <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-    <a class="boton-amarillo" href="/prybienesraices/contacto.php">Contactanos</a>
+    <a class="boton-amarillo" href="/contacto">Contactanos</a>
 </section>
 <div class="contenedor seccion seccion-inferior">
     <section class="blog">
@@ -28,7 +28,7 @@
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="entrada.php">
+                <a href="/entrada">
                     <h4>Guia para la decoracion de tu hogar</h4>
                     <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                     <p>
@@ -47,7 +47,7 @@
                 </picture>
             </div>
             <div class="texto-entrada">
-                <a href="/prybienesraices/entrada.php">
+                <a href="/entrada">
                     <h4>Terraza en el techo de tu casa</h4>
                     <p class="informacion-meta">Escrito el: <span>20/10/2021</span> por: <span>Admin</span></p>
                     <p>

@@ -2,7 +2,9 @@
 if (!isset($_SESSION)) {
     session_start();
 }
-
+if (!isset($inicio)) {
+    $inicio = false;
+}
 $auth = $_SESSION['login'] ?? false;
 ?>
 <!DOCTYPE html>
@@ -19,7 +21,7 @@ $auth = $_SESSION['login'] ?? false;
     <header class="header <?php echo $inicio ? 'inicio' : ''; ?>">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="index.php">
+                <a href="/">
                     <img src="/build/img/logo.svg" alt="logo">
                 </a>
                 <div class="mobile-menu">
@@ -41,7 +43,7 @@ $auth = $_SESSION['login'] ?? false;
 
             </div>
             <?php if (isset($inicio)) { ?>
-                <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+                <h1>Venta de Casas y Departamentos</h1>
             <?php } ?>
         </div>
         <!--Cierre barra-->
@@ -54,10 +56,10 @@ $auth = $_SESSION['login'] ?? false;
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="nosotros.html">Nostors</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blogs</a>
-                <a href="contancto.html">Contacto</a>
+                <a href="/nosotros">Nostors</a>
+                <a href="/anuncios">Anuncios</a>
+                <a href="/blog">Blogs</a>
+                <a href="/contacto">Contacto</a>
             </nav>
             <p class="copyright">Todos los derechos reservados <?php
                                                                 echo $fecha = date('Y');
