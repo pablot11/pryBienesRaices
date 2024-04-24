@@ -14,7 +14,7 @@ Este repositorio contiene los siguientes elementos clave:
 - Código Fuente del proyecto
 - Logo e Imágenes
 
-## Tecnologías Utilizadas
+### Tecnologías Utilizadas
 Este proyecto se basa en la arquitectura Modelo-Vista-Controlador (MVC), lo que proporciona una estructura organizada y modular para el desarrollo de aplicaciones web.
 ## **Las tecnologías utilizadas en este proyecto son:**
 
