@@ -65,6 +65,7 @@ class PaginasController
             //Indicamos que vayan por un tunel seguro los mails para que no los intercepten, no se encriptan
             $mail->SMTPSecure = 'tls';
             $mail->Port = $_ENV['EMAIL_PORT'];
+
             //Configuramos el contenido del mail
             //Quien envia el email
             $mail->setFrom('admin@bienesraices.com', 'bienes');
@@ -99,6 +100,7 @@ class PaginasController
             //Contenido dle mail
             $mail->Body = $contenido;
             $mail->AltBody = 'Mail sobre bienes raices';
+            debbug($mail);
             //Enviar el email
             if ($mail->send()) {
                 $mensaje = "Mensaje enviado correctamente";
