@@ -60,11 +60,11 @@ class PaginasController
             $mail->Host = $_ENV['EMAIL_HOST'];
             //Indicamos que nos vamos a auntenticar por usuario y password
             $mail->SMTPAuth = true;
-            $mail->Username = $_ENV['EMAIL_USER'];;
-            $mail->Password = $_ENV['EMAIL_PASS'];;
+            $mail->Username = $_ENV['EMAIL_USER'];
+            $mail->Password = $_ENV['EMAIL_PASS'];
             //Indicamos que vayan por un tunel seguro los mails para que no los intercepten, no se encriptan
             $mail->SMTPSecure = 'tls';
-            $mail->Port = $_ENV['EMAIL_PORT'];;
+            $mail->Port = $_ENV['EMAIL_PORT'];
             //Configuramos el contenido del mail
             //Quien envia el email
             $mail->setFrom('admin@bienesraices.com', 'bienes');
