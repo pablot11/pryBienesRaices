@@ -100,8 +100,8 @@ class PaginasController
             //Contenido dle mail
             $mail->Body = $contenido;
             $mail->AltBody = 'Mail sobre bienes raices';
-            debbug($mail);
             //Enviar el email
+            debbug($mail->send());
             if ($mail->send()) {
                 $mensaje = "Mensaje enviado correctamente";
             } else {
