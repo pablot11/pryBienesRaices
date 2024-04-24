@@ -47,6 +47,7 @@ class PaginasController
     }
     public static function contacto(Router $router)
     {
+        $mensaje = '';
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mensaje = null;
             $respuestas = $_POST['contacto'];

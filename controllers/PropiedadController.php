@@ -68,6 +68,7 @@ class PropiedadController
     {
         $id = validarORedireccionar('/admin');
         $propiedad = Propiedad::find($id);
+        debbug($propiedad->titulo);
         $vendedores = Vendedor::all();
         $errores = Propiedad::getErrores();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
