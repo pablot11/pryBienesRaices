@@ -1,4 +1,4 @@
-### Bienes Raíces - Sistema Inmobiliaria
+# Bienes Raíces - Sistema Inmobiliaria
 Bienes Raíces es tu plataforma para encontrar, comprar y vender propiedades. Explora anuncios, contacta a agentes y haz realidad tus planes de vivienda. Además, consulta nuestro blog con consejos prácticos para el hogar. Sin vueltas, aquí te ayudamos a encontrar lo que buscas.
 
 ## Descripción del Proyecto
@@ -16,7 +16,7 @@ Este repositorio contiene los siguientes elementos clave:
 
 ## Tecnologías Utilizadas
 Este proyecto se basa en la arquitectura Modelo-Vista-Controlador (MVC), lo que proporciona una estructura organizada y modular para el desarrollo de aplicaciones web.
-# **Las tecnologías utilizadas en este proyecto son:**
+### **Las tecnologías utilizadas en este proyecto son:**
 
 - **Front-End:** HTML, CSS, JavaScript y SASS
 - **Back-End:** PHP y MySQL
