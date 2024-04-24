@@ -15,9 +15,13 @@ Este repositorio contiene los siguientes elementos clave:
 - Logo e Imágenes
 
 ## Tecnologías Utilizadas
-- Front-End: HTML, CSS, JavaScript y SASS
-- Back-End: PHP y MySQL
+Este proyecto se basa en la arquitectura Modelo-Vista-Controlador (MVC), lo que proporciona una estructura organizada y modular para el desarrollo de aplicaciones web.
+- **Las tecnologías utilizadas en este proyecto son:**
 
+- **Front-End:** HTML, CSS, JavaScript y SASS
+- **Back-End:** PHP y MySQL
+
+  
 ## Configuración y Uso
 
 ### Clonar el Repositorio
