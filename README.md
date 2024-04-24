@@ -11,8 +11,8 @@ Bienes Raíces es un sistema que nos permite visualizar los anuncios publicados 
 
 ## Estructura del Proyecto
 Este repositorio contiene los siguientes elementos clave:
-- Código Fuente: Contiene el código fuente del sistema.
-- Recursos Gráficos: Incluye logotipos e imágenes.
+- Código Fuente del proyecto
+- Logo e Imágenes
 
 ## Tecnologías Utilizadas
 - Front-End: HTML, CSS, JavaScript y SASS
