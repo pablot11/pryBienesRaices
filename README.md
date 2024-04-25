@@ -4,7 +4,7 @@ Bienes Raíces es tu plataforma para encontrar, comprar y vender propiedades. Ex
 ## Descripción del Proyecto
 Bienes Raíces es un sistema que nos permite visualizar los anuncios publicados por el administrador de la inmobiliaria, así como también poder contactar y comprar un bien raíz y/o publicar el tuyo a la venta. Además, ofrece un blog ficticio con diversos artículos con consejos para nuestra vivienda.
 
-Puedes visitar la página del proyecto [aquí]().
+Puedes visitar la página del proyecto [aquí](https://qopkamu.nyc.dom.my.id/).
 
 
 ## Características del Proyecto
