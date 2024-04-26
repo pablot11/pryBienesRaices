@@ -26,15 +26,7 @@ function validarTipoContenido($tipo)
     $tipos = ['vendedor', 'propiedad'];
     return in_array($tipo, $tipos);
 }
-/*
-function estaAutenticado()
-{
-    session_start();
-    if (!$_SESSION['login']) {
-        header('Location: /');
-    }
-}
-*/
+
 //Muestra los mensajes de creado, actualizado o eliminado
 function mostrarNotificacion($codigo)
 {

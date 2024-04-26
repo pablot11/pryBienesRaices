@@ -54,7 +54,6 @@ class PaginasController
             //Creamos instancia de phpmailer
             $mail = new PHPMailer();
             //Configurar el protocolo smtp para el envio de mails
-            //Decimos que vamos a usar el protoclo SMTP
             $mail->isSMTP();
             //Indicamos el server host 
             $mail->Host = $_ENV['EMAIL_HOST'];
@@ -67,11 +66,8 @@ class PaginasController
             $mail->Port = $_ENV['EMAIL_PORT'];
 
             //Configuramos el contenido del mail
-            //Quien envia el email
             $mail->setFrom('admin@bienesraices.com', 'bienes');
-            //A que email va a llegar el correo
             $mail->addAddress('admin@bienesraices.com');
-            //Lo primero que el usuario va a leer
             $mail->Subject = 'Tienes un Nuevo Mensaje';
 
             //Habilitar HTML

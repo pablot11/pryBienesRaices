@@ -9,12 +9,10 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class PropiedadController
 {
-    //AL incluir la clase Router, con el parametro de tipo Router mantenemos referencia al mismo objeto en memoria
     public static function index(Router $router)
     {
         $propiedades = Propiedad::all();
         $vendedores = Vendedor::all();
-        // Si la variable GET resultado no esta definida, se le asigna null
         $resultado = $_GET['resultado'] ?? null;
         $router->render('propiedades/admin', [
             'propiedades' => $propiedades,
@@ -29,8 +27,6 @@ class PropiedadController
 
 
         $errores = Propiedad::getErrores();
-        //Verificar que sea POST para ver si creo una propiedad el usuario
-        //Caso contrario el usuario solo hizo GET para obtener el layout de crear
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $propiedad = new Propiedad($_POST['propiedad']);
 
@@ -46,7 +42,6 @@ class PropiedadController
 
             //Validar los campos del formulario
             $errores = $propiedad->validar();
-            //Revisar que no hayan errores en el arreglo
             if (empty($errores)) {
                 //Crea la carpeta en caso de no existir
                 if (!is_dir(CARPETA_IMAGENES)) {
@@ -72,14 +67,8 @@ class PropiedadController
         $errores = Propiedad::getErrores();
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             //Asignar los atributos
-            //En el atributo name de los inputs asignamos un array llamado propiedad
-            //METODO 1
             $args = $_POST['propiedad'];
             $propiedad->sincronizar($args);
-            //METODO 2
-            /*
-            $propiedad->sincronizar($_POST);
-            */
             $errores = $propiedad->validar();
             //Generar nombre unico imagen
             $nombreImagen = md5(uniqid(rand(), true)) . ".jpg";
@@ -87,7 +76,7 @@ class PropiedadController
             if ($_FILES['propiedad']['tmp_name']['imagen']) {
                 //Realiza un resize a la imagen con la libreria intervention
                 $image = Image::make($_FILES['propiedad']['tmp_name']['imagen'])->fit(800, 600);
-                //llamaos setImagen() para solo mandar el nombre de la imagen, no el archivo
+                //Guarda el nombre de la imagen
                 $propiedad->setImagen($nombreImagen);
             }
 
