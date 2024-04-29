@@ -38,7 +38,7 @@ class Router
             $fn = $this->rutasPOST[$currentUrl] ?? null;
         }
 
-        //Proteer las rutas
+        //Proteger las rutas
 
         if (in_array($currentUrl, $rutas_protegidas) && !$auth) {
             header('Location: /');
